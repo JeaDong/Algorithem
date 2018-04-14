@@ -14,7 +14,7 @@ def uniquePaths2(self, m, n):
             dp[i][j] = dp[i-1][j] + dp[i][j-1]
     return dp[-1][-1]
 
-# O(n) space 
+# O(n) space  
 def uniquePaths(self, m, n):
     if not m or not n:
         return 0
